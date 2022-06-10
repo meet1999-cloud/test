@@ -1,25 +1,30 @@
 """
     online Candidate Voting
 """
-username = ("Enter a username :")
-n1 = str(input())
-age = ("Enter your age :")
-n2 = int(input())
-if age <= 18:
+user_name = input("Please enter username: ")
+age = int(input("Please enter age: "))
+print("User Name", user_name)
+print("Age", age)
+if age < 18:
     print("You can,t vote")
-elif age ==18:
+    exit()
+elif age == 18:
     print("You should have a voter id card")
 else:
     print("You can vote")
-print("Please Choose anyone of them")
 choice = {"BJP" : 1, "MNS" : 2, "CONG" : 3, "AAP" : 4}
-for i in choice:
-    if choice == 1:
-        break
-    if choice == 2:
-        break
-    if choice == 3:
-        break
+user = int(input(f"Please Choose anyone of them {choice}"))
+print("user", user)
+if user == 1:
+    print("you choose BJP")
+elif user == 2:
+    print("you choose MNS")
+elif user == 3:
+    print("you choose CONG")
+elif user == 2:
+    print("you choose AAP")
+print("Thank you for choosing")
+
 
 
 
