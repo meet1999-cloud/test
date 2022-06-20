@@ -1,4 +1,3 @@
-# from secrets import choice
 import mysql.connector as connector
 class DBHelper:
     def __init__(self):
